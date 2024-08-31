@@ -56,10 +56,10 @@ const Chart = (rows) => {
     const row = rows?.rows[0] || {};
     setOptions({
       title: {
-        text: row?.["Vendor Name"],
+        text: row?.["Vendor Name"] || "Performance Chart",
       },
       subtitle: {
-        text: "Vendor Performance",
+        text: "Vendor Performance Yearly",
       },
       data: getData(rows),
       series: getSerieData(rows),
