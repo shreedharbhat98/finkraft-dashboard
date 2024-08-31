@@ -1,8 +1,19 @@
-# React + Vite
+# Dashboard using AG Grid & AG Charts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project aims to build the dashboard as mentioned [here](https://finkraftai.notion.site/FRONTEND-ROUND-1-3797d319a2574597b0911ab4b3828cb3)
 
-Currently, two official plugins are available:
+## Getting Started
+- Clone the respository using
+```sh
+  git clone git@github.com:shreedharbhat98/finkraft-dashboard.git
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Navigate inside the `finkraft-dashboard` using
+```sh
+  cd finkraft-dashboard
+```
+
+- Run the developement server using
+```sh
+  npm run dev
+``` 
