@@ -9,7 +9,7 @@ const paginationPageSizeSelector = [200, 500, 1000];
 
 const Grid = ({ tableData, onRowSelected }) => {
   return (
-    <div className="ag-theme-quartz" style={{ height: 700, width: 800 }}>
+    <div className="ag-theme-quartz" style={{ height: 700, width: '100%' }}>
       {tableData?.length ? (
         <AgGridReact
           rowData={tableData}

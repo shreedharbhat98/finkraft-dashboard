@@ -53,17 +53,19 @@ const getSerieData = () => {
 const Chart = (rows) => {
   const [options, setOptions] = useState({});
   useEffect(() => {
+    const row = rows?.rows[0] || {};
     setOptions({
       title: {
-        text: "Vendor Revenue Info",
+        text: row?.["Vendor Name"],
+      },
+      subtitle: {
+        text: "Vendor Performance",
       },
       data: getData(rows),
       series: getSerieData(rows),
     });
   }, [rows]);
-  return (
-    <AgCharts options={options} style={{ width: "400px", height: "400px" }} />
-  );
+  return <AgCharts options={options} />;
 };
 
 const MemoizedChartExample = memo(Chart);
