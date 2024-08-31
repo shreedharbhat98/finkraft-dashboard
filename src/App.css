@@ -1,10 +1,22 @@
 #root{
   margin: auto;
+  width: 100%;
 }
 
 .container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 100%;
   align-items: center;
   gap: 16px;
+  padding: 16px;
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+  }
 }
