@@ -20,14 +20,17 @@ function App() {
   };
 
   return (
-    <div className="container">
-      {tableData.length && (
-        <Fragment>
-          <Grid tableData={tableData} onRowSelected={onRowSelected} />
-          <MemoizedChartExample rows={selectedRows} />
-        </Fragment>
-      )}
-    </div>
+    <main>
+      <h1 className="text-center">Vendor Performance Table </h1>
+      <div className="container">
+        {tableData.length && (
+          <Fragment>
+            <Grid tableData={tableData} onRowSelected={onRowSelected} />
+            <MemoizedChartExample rows={selectedRows} />
+          </Fragment>
+        )}
+      </div>
+    </main>
   );
 }
 
