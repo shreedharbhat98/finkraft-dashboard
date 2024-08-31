@@ -17,3 +17,6 @@ This project aims to build the dashboard as mentioned [here](https://finkraftai.
 ```sh
   npm run dev
 ``` 
+
+## This project is deployed on vercel
+Live preview link : [Dashboard](https://finkraft-dashboard-pi.vercel.app/)
